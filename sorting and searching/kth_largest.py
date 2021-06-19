@@ -1,5 +1,6 @@
 """
-Node on Kth largest element in an array.
+Note on Kth largest element in an array.
+https://leetcode.com/problems/kth-largest-element-in-an-array/
 
 The simplest way of doing this question is just by sorting and then getting the
 list[-k]. This is N*logN.
