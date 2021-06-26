@@ -78,8 +78,8 @@ This improves Time complexity.
 
 Time Comp. -> O(V + E). Since you're not re-doing nodes your code should 
                         visit every vertex once (technically twice).
-Space Comp. -> O(V + E) You're storing the whole graph to convert it into a nice
-                        repr. Nothing changes here.
+Space Comp. -> O(V + E) You're storing the whole graph to convert it into a 
+                        nice repr. Nothing changes here.
 """
 
 
