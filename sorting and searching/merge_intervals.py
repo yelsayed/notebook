@@ -52,6 +52,8 @@ def is_overlapping(interval1, interval2):
 
 def merge_intervals(intervals: List[List[int]]) -> List[List[int]]:
     sorted_intervals = sorted(intervals, key=lambda x: x[0])
+    # We append this one since we know it won't overlap with the last interval
+    # that way we append it in the loop
     sorted_intervals.append([-1, -1])
     non_overlapping = []
 
@@ -62,6 +64,8 @@ def merge_intervals(intervals: List[List[int]]) -> List[List[int]]:
 
         overlapping = is_overlapping(current_interval, interval)
         if overlapping:
+            # If there is an overlap, get the max of the interval and the
+            # current merged interval
             max_end = max(current_interval[1], interval[1])
             current_interval = [current_interval[0], max_end]
         else:
