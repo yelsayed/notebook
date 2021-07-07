@@ -2,7 +2,7 @@
 # Heaps can be used to implement priority queues and kth largest/smallest
 
 import math
-from heapq import heappop, heappush
+from heapq import heappop, heappush, heapify
 
 
 # heappop - pop and return the smallest element from heap
@@ -67,3 +67,18 @@ class MaxHeap(MinHeap):
 
     def __str__(self):
         return str(self.heap)
+
+
+"""
+Another thing that is interesting about this is how you can do heap sorting.
+Heap sorting is very simple, just heapify and get the smallest element n times.
+This will give you the acsending order of the elements.
+
+Time -> O(N*LogN), popping is LogN and you're doing that N times
+Space -> O(N), heapify is done in place, so it's actually O(1) in terms of aux
+"""
+
+
+def heap_sort(array):
+    heapify(array)
+    return [heappop(array) for i in range(len(array))]
