@@ -62,6 +62,11 @@ is the max. This makes sense from the perspective of the question itself. If
 you were a foraging for gold, you wanna know which starting point is the best.
 
 And voila. Clean problem. Not an easy one for sure, it's a medium difficulty.
+
+Complexity.
+Time -> O(M*N) Linear time :)
+Space -> O(M*N) You're creating a new DP array, but it can be done in O(1) if
+                you just modify the input array.
 """
 
 
