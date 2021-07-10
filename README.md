@@ -144,3 +144,11 @@ def build_graph(edges):
     return graph
 ```
 
+#### `gen`
+
+Generators in python are a great way to keep going without storing into a list.
+
+
+#### `[::-1]`
+
+Simple way to reverse a `list` or a `string`.
