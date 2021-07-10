@@ -1,4 +1,7 @@
 """
+Note on Path with Maximum Gold
+https://leetcode.com/problems/path-with-maximum-gold/
+
 You can take every point in the graph and say
 that this point is the maximum of a point that
 is next to it, plus this point.
@@ -26,7 +29,6 @@ This is DFS with backtracking :D
 
 Time -> O(3^(M+N)*(M+N))
 Space -> O(1)
-
 """
 
 from typing import List
