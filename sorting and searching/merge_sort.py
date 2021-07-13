@@ -3,10 +3,10 @@ Note on Merge Sort
 
 The idea in merge sort is that you take an array apart until it's smallest
 pieces. There is one base case in the recursion, that len(array) == 1 is sorted.
-When you merge two sorted arrays you can go through both once and just
-interweave the two arrays. This is done in linear time.
+When you merge two sorted arrays and strings you can go through both once and just
+interweave the two arrays and strings. This is done in linear time.
 
-Merging two sorted arrays
+Merging two sorted arrays and strings
    i
 [1,5]
 [4,8,9]
@@ -15,7 +15,7 @@ Merging two sorted arrays
 [1,4,...]
 
 Time -> O(N*logN)
-Space -> O(N) as you're creating a ton of new arrays but the max is N
+Space -> O(N) as you're creating a ton of new arrays and strings but the max is N
 
 Note after coding it: Wow... I got it first time. This makes me happy.
 """

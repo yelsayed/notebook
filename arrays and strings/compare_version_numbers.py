@@ -12,7 +12,7 @@ and check the version numbers.
 When you encounter a blank just put 0 instead. It will be the same
 
 Time -> O(max(N, M) + N + M) because we're also doing a split.
-Space -> O(N + M) we're storing the arrays after splitting.
+Space -> O(N + M) we're storing the arrays and strings after splitting.
 """
 
 
