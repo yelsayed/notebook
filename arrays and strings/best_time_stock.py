@@ -45,6 +45,9 @@ This will take care of the case
 [2,3,1]
 
 Like a charm :D
+
+Time -> O(N)
+Space -> O(1)
 """
 import math
 from typing import List
